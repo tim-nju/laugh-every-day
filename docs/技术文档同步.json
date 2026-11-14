@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "doc_hash": "6adc65d37b1b83b5fff709e13b9363f75b896a0ee8d395957fb7c551986fcc51",
+  "fingerprints": {
+    "app.js": "1e0bb35d4ef6415aa663ba9dd77b750e6bf02ac60ee4b1ea54142d0452602529",
+    "daily_capsule.json": "67244b8fdd7a786d6838cc8e34b77243852e907cad88df80bb0fd6ed263058f6",
+    "data.js": "276d0f2e03c9f81b3909d70defdfaa8b7feecf5d8b1f69bf788068567a3ffb19",
+    "index.html": "f433020eefa41c6f9472d75b5771e3cfaabd32e4c3a6bd34f568f21fcbe3b7c0",
+    "manifest.json": "88b3b5336db906f8d9829e77bfba3ecea202bd9a7acdb55c26c38ce107623dd9",
+    "quiz.js": "3da2819fc5efc262678253641ffc3763595a444cc1e3132ced62ffbf0e61ba44",
+    "scripts/check_technical_docs.py": "5849b968b8e554520469007801ca30a270ef5694b2da4c9c3705874cbb645f12",
+    "scripts/daily_hunter.py": "f74dea75fdec86f4105761b55536089eaa48c6f927f2c265956c499a9cffd6f5",
+    "storage.js": "188806bb426a1c035707a89d5c1191189356dc099876334845efffcd87a713ee",
+    "styles.css": "162ca814055823021330f45fa2b88d442c2065226dd829e151d72f88c89f9383",
+    "sw.js": "99de874bdbf3a6105fa04d9d29ca52d19345858a5132a8f176af3159e09bec26"
+  },
+  "records": [
+    {
+      "date": "2026-11-14T00:41:29+08:00",
+      "summary": "初始化LaughEveryDay笑点雷达评测与10分钟开心胶囊技术架构",
+      "impact": "architecture",
+      "sections": "目标与范围,技术栈,模块与目录,数据模型,接口与契约,关键流程,部署与配置,安全与隐私,测试与验收,技术决策,迭代同步",
+      "doc_hash": "1b3bd492656ccb0018f83d37150e6414c421b37cdc88dce4cad84860d83e36a8"
+    },
+    {
+      "date": "2026-11-14T00:44:44+08:00",
+      "summary": "落地LaughEveryDay核心代码与前端视图",
+      "impact": "implementation",
+      "sections": "仅完成第一期技术架构规定的纯前端单机模块代码落地，因为所有接口契约与数据模型与架构文档严格保持一致，未发生跨层或破坏性架构变更",
+      "doc_hash": "1b3bd492656ccb0018f83d37150e6414c421b37cdc88dce4cad84860d83e36a8"
+    },
+    {
+      "date": "2026-11-14T01:29:04+08:00",
+      "summary": "架构升级：PWA规范、方案B每日猎手与多模态杨波One-Liner笑料引擎",
+      "impact": "architecture",
+      "sections": "目标与范围,技术栈,模块与目录,数据模型,接口与契约,关键流程,部署与配置,安全与隐私,测试与验收,技术决策,迭代同步",
+      "doc_hash": "6adc65d37b1b83b5fff709e13b9363f75b896a0ee8d395957fb7c551986fcc51"
+    },
+    {
+      "date": "2026-11-14T01:31:06+08:00",
+      "summary": "落地PWA、杨波One-Liner与方案B猎手系统代码",
+      "impact": "implementation",
+      "sections": "仅完成第二期技术架构规定的PWA离线与方案B每日猎手脚本落地，因为接口模型与架构文档严格保持一致，未发生破坏性架构变更",
+      "doc_hash": "6adc65d37b1b83b5fff709e13b9363f75b896a0ee8d395957fb7c551986fcc51"
+    }
+  ]
+}

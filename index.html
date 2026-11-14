@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>天天开心 (LaughEveryDay) · 每日10分钟开心药方</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#FF6B6B">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="天天开心">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="icon" type="image/png" href="assets/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="confetti-canvas"></canvas>
+
+  <div class="app-container">
+    <header class="app-header">
+      <div class="header-brand">
+        <span class="brand-icon">⚡</span>
+        <h1 class="brand-title">天天开心 <span class="brand-title-accent">Laugh</span></h1>
+      </div>
+      <div class="header-meta">
+        <span id="header-profile-tag" class="header-tag hidden">🎯 笑点画像</span>
+        <span id="header-streak-badge" class="header-tag streak-tag">🔥 连续开心 1 天</span>
+      </div>
+    </header>
+
+    <nav class="app-nav-bar">
+      <button class="nav-tab-btn active" data-view="capsule">
+        <span class="nav-icon">💊</span>
+        <span class="nav-text">今日开心胶囊</span>
+      </button>
+      <button class="nav-tab-btn" data-view="radar">
+        <span class="nav-icon">🎯</span>
+        <span class="nav-text">我的笑点雷达</span>
+      </button>
+      <button class="nav-tab-btn" data-view="favorites">
+        <span class="nav-icon">⭐</span>
+        <span class="nav-text">笑点弹药库</span>
+      </button>
+      <button class="nav-tab-btn" id="btn-header-retake" data-view="quiz">
+        <span class="nav-icon">🧪</span>
+        <span class="nav-text">笑点评测</span>
+      </button>
+    </nav>
+
+    <main class="app-main-content">
+      <section id="view-quiz" class="view-panel">
+        <div id="quiz-view-container"></div>
+      </section>
+
+      <section id="view-capsule" class="view-panel hidden">
+        <div class="capsule-meta-header">
+          <div class="capsule-timer-widget">
+            <div class="timer-badge">
+              <span>⏱️</span>
+              <span id="capsule-timer-val">10:00</span>
+            </div>
+            <div class="timer-track-mini">
+              <div id="capsule-timer-fill" class="timer-fill-mini" style="width: 0%;"></div>
+            </div>
+          </div>
+          <div class="capsule-status-quote">今日能量补给 · 10分钟有边界欢笑</div>
+        </div>
+        <div id="capsule-player-container"></div>
+      </section>
+
+      <section id="view-radar" class="view-panel hidden">
+        <div id="radar-view-container"></div>
+      </section>
+
+      <section id="view-favorites" class="view-panel hidden">
+        <div id="favorites-view-container"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="storage.js"></script>
+  <script src="quiz.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').then((reg) => {
+          console.log('LaughEveryDay PWA ServiceWorker registered:', reg.scope);
+        }).catch((err) => {
+          console.warn('ServiceWorker registration skipped:', err);
+        });
+      });
+    }
+  </script>
+</body>
+</html>
