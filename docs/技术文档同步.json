@@ -2,6 +2,7 @@
   "version": 1,
   "doc_hash": "6adc65d37b1b83b5fff709e13b9363f75b896a0ee8d395957fb7c551986fcc51",
   "fingerprints": {
+    ".gitignore": "a086f016b358f5a233510e5c8adec08607a0bc2c46e7b532e7e6d246fdd36108",
     "app.js": "1e0bb35d4ef6415aa663ba9dd77b750e6bf02ac60ee4b1ea54142d0452602529",
     "daily_capsule.json": "67244b8fdd7a786d6838cc8e34b77243852e907cad88df80bb0fd6ed263058f6",
     "data.js": "276d0f2e03c9f81b3909d70defdfaa8b7feecf5d8b1f69bf788068567a3ffb19",
@@ -41,6 +42,13 @@
       "summary": "落地PWA、杨波One-Liner与方案B猎手系统代码",
       "impact": "implementation",
       "sections": "仅完成第二期技术架构规定的PWA离线与方案B每日猎手脚本落地，因为接口模型与架构文档严格保持一致，未发生破坏性架构变更",
+      "doc_hash": "6adc65d37b1b83b5fff709e13b9363f75b896a0ee8d395957fb7c551986fcc51"
+    },
+    {
+      "date": "2026-11-14T11:23:46+08:00",
+      "summary": "增加.gitignore并登记GitHub Pages生产部署",
+      "impact": "implementation",
+      "sections": "仅增加.gitignore排除临时文件并登记GitHub Pages生产部署，因为应用代码逻辑与架构完全一致，未发生破坏性架构变更",
       "doc_hash": "6adc65d37b1b83b5fff709e13b9363f75b896a0ee8d395957fb7c551986fcc51"
     }
   ]
